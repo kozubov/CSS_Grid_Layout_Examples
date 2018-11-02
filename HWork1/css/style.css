@@ -1,0 +1,91 @@
+html {
+    overflow-x: hidden; }
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*   Main Div's  */
+.container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: "top top top top top top top top top top top top" "content content content content content content content asidebar asidebar asidebar asidebar asidebar" "left left left left left left right right right right right right" "footer footer footer footer footer footer footer footer footer footer footer footer";
+        grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+        height: calc(100vh - 20px);
+}
+.top{
+    grid-area: top;
+    padding: 10px;
+    background: dodgerblue;
+}
+.content{
+    grid-area: content;
+    padding: 10px;
+    background: white;
+}
+.sidebar{
+    grid-area: asidebar;
+    padding: 10px;
+    background: coral;
+}
+.left{
+    grid-area: left;
+    padding: 10px;
+    background: dodgerblue;
+}
+.right{
+    grid-area: right;
+    padding: 10px;
+    background: cyan;
+}
+.footer{
+    grid-area: footer;
+    padding: 10px;
+    background: dimgray;
+}
+
+
+/*   Inner Div's   */
+.top__title{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.content__title{
+    font-size: 1.25rem;
+    padding: 20px 10px 10px 30px;
+}
+.content__text{
+    font-size: 1rem;
+    padding: 20px 20px 20px 20px;
+}
+.sidebar__content__title{
+    font-size: 1.25rem;
+    padding: 20px 10px 10px 30px;
+}
+.sidebar__content__text{
+    font-size: 1rem;
+    padding: 20px 20px 20px 20px;
+}
+.sidebar__content ul{
+    font-size: 1rem;
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 0 30px;
+}
+.left__right__text{
+    font-size: 1rem;
+    padding: 10px 10px 10px 30px;
+}
+.footer__text{
+    padding: 4px;
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+.footer__text a{
+    padding: 4px;
+    font-size: 1rem;
+    color: white;
+}

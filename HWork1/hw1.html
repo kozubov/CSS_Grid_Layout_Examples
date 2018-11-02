@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grid Layout">
+    <meta name="keywords" content="Grid, Layout">
+    <meta name="author" content="Dmitry Kozubov">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top__title">
+                Standard two-column layout
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__title">
+                Main content area
+            </div>
+            <div class="content__text">
+                The main content area is where the magic happens. Right now, the main content is on the left and the sidebar is on the right. If you go into the markup for this document and add dir=`rtl` to the html element, the two elements will swap spaces because CSS Grid honors text direction.
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <div class="sidebar__content__title">
+                    The sidebar
+                </div>
+                <div class="sidebar__content__text">
+                    The sidebar typically contains things like:
+                </div>
+                <ul>
+                    <li>Links</li>
+                    <li>Menus</li>
+                    <li>Ads</li>
+                </ul>
+            </div>
+        </div>
+        <div class="left">
+            <div class="left__right__text">
+                This should take up half the space.
+            </div>
+        </div>
+        <div class="right">
+            <div class="left__right__text">
+                This should take up the other half of the space.
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__text">
+                Content, layout, design: <a href="#">Morten Rand-Hendriksen</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
